@@ -24,7 +24,7 @@ exp2 = df.y.ewm(span=200, adjust=False).mean()
 
 plt.plot(df.ds, df.y, label='AMD')
 
-plt.plot(df.ds, rolling_mean, label='AMD 20 Day SMA', color='orange')
-plt.plot(df.ds, rolling_mean2, label='AMD 50 Day SMA', color='magenta')
+plt.plot(df.ds, rolling_mean, label='AMD 50 Day SMA', color='orange')
+plt.plot(df.ds, rolling_mean2, label='AMD 200 Day SMA', color='magenta')
 plt.legend(loc='upper left')
 plt.show()
