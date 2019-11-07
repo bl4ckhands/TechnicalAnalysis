@@ -16,11 +16,11 @@ plt.plot(df.ds, df.y)
 plt.show()
 
 ####
-rolling_mean = df.y.rolling(window=20).mean()
-rolling_mean2 = df.y.rolling(window=50).mean()
+rolling_mean = df.y.rolling(window=50).mean()
+rolling_mean2 = df.y.rolling(window=200).mean()
 
-exp1 = df.y.ewm(span=20, adjust=False).mean()
-exp2 = df.y.ewm(span=50, adjust=False).mean()
+exp1 = df.y.ewm(span=50, adjust=False).mean()
+exp2 = df.y.ewm(span=200, adjust=False).mean()
 
 plt.plot(df.ds, df.y, label='AMD')
 
